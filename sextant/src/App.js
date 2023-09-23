@@ -2,6 +2,7 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Banner from "./components/Banner";
 import Card from "./components/Card";
+import Webso from "./components/Webso";
 
 function App() {
   const [ip, setIp] = useState("");
@@ -38,6 +39,7 @@ function App() {
       <div className="cards-container">
         <Card ip={ip} universalIp={universalIp} />
       </div>
+      <Webso />
     </>
   );
 }
